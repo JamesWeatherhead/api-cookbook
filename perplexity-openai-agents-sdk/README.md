@@ -29,6 +29,7 @@ Set the following environment variables or update the code with the appropriate 
 	•	`EXAMPLE_BASE_URL`: The base URL of the Perplexity API (default: https://api.perplexity.ai).
 	•	`EXAMPLE_API_KEY`: Your API key for accessing the Sonar API.
 	•	`EXAMPLE_MODEL_NAME`: The model name, defaulting to `sonar-pro`.
+        •       `EXAMPLE_API_VERSION`: Optional API version, defaults to `v1`.
 
 ## Usage
 
@@ -37,7 +38,7 @@ Simply run the script to create the agent and test a sample query asking for the
 
 ## Running the Example
 	1.	Set up Environment Variables:
-Ensure `EXAMPLE_BASE_URL`, `EXAMPLE_API_KEY`, and `EXAMPLE_MODEL_NAME` are set, either in your shell or within the code.
+Ensure `EXAMPLE_BASE_URL`, `EXAMPLE_API_KEY`, and `EXAMPLE_MODEL_NAME`, `EXAMPLE_API_VERSION` are set, either in your shell or within the code.
 	2.	Install Dependencies:
 Make sure you have installed the required packages (`openai`, `nest_asyncio`, and `agents`).
 	3.	Execute the Script:

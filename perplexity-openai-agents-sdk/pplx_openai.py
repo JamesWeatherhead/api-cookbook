@@ -4,6 +4,7 @@ import os       # To access environment variables
 
 # Import AsyncOpenAI for creating an async client
 from openai import AsyncOpenAI
+from client_helper import get_async_client
 
 # Import custom classes and functions from the agents package.
 # These handle agent creation, model interfacing, running agents, and more.
@@ -11,8 +12,9 @@ from agents import Agent, OpenAIChatCompletionsModel, Runner, function_tool, set
 
 # Retrieve configuration from environment variables or use defaults
 BASE_URL = os.getenv("EXAMPLE_BASE_URL") or "https://api.perplexity.ai"
-API_KEY = os.getenv("EXAMPLE_API_KEY") 
+API_KEY = os.getenv("EXAMPLE_API_KEY")
 MODEL_NAME = os.getenv("EXAMPLE_MODEL_NAME") or "sonar-pro"
+API_VERSION = os.getenv("EXAMPLE_API_VERSION") or "v1"
 
 # Validate that all required configuration variables are set
 if not BASE_URL or not API_KEY or not MODEL_NAME:
@@ -29,8 +31,9 @@ Note: Tracing is disabled in this example. If you have an OpenAI platform API ke
 you can enable tracing by setting the environment variable OPENAI_API_KEY or using set_tracing_export_api_key().
 """
 
-# Initialize the custom OpenAI async client with the specified BASE_URL and API_KEY.
-client = AsyncOpenAI(base_url=BASE_URL, api_key=API_KEY)
+# Initialize the custom OpenAI async client using the helper. This allows
+# sharing a single HTTP client instance and supports API versioning.
+client = get_async_client(base_url=BASE_URL, api_key=API_KEY, api_version=API_VERSION)
 
 # Disable tracing to avoid using a platform tracing key; adjust as needed.
 set_tracing_disabled(disabled=True)
