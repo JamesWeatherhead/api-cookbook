@@ -22,14 +22,14 @@ Please check the [CONTRIBUTING.md](./CONTRIBUTING.md) file for guidelines.
 
 • **[Daily Knowledge Bot](sonar-use-cases/daily_knowledge_bot/)** - Python application that delivers interesting facts about rotating topics using the Perplexity AI API.
 
-• **[Disease Information App](sonar-use-cases/daily_knowledge_bot/)** - Interactive browser-based application providing structured information about diseases using the Sonar API.
+• **[Disease Information App](sonar-use-cases/disease_qa/)** - Interactive browser-based application providing structured information about diseases using the Sonar API.
 
 ## Getting Started
 
 To use any of the projects in this repository, you'll need:
 
 1. A Perplexity API key (sign up [here](https://docs.perplexity.ai/guides/getting-started))
-3. Python 3.7+ installed on your system
+2. Python 3.7+ installed on your system
 
 Each project includes its own README with specific installation and usage instructions.
 

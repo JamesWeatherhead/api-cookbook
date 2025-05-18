@@ -34,8 +34,8 @@ We're especially interested in projects that demonstrate one or more of the foll
 2. **Create a New Directory**: Name it descriptively after your project
 3. **Implement Your Project**: Follow the quality guidelines above
 4. **Test Thoroughly**: Ensure everything works as expected
-5. **Update the README**: Add your project to the README for visibility. 
-5. **Submit a Pull Request**: Include a detailed description of your project and what makes it valuable
+5. **Update the README**: Add your project to the README for visibility.
+6. **Submit a Pull Request**: Include a detailed description of your project and what makes it valuable
 
 ## Review Criteria
 

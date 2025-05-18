@@ -43,7 +43,7 @@ memory/
 
 ## Contributions
 
-If you have found another way to do tackle the same issue using LlamaIndex please feel free to open a PR! Check out our `CONTRIBUTING.md` file for more guidance. 
+If you have found another way to tackle the same issue using LlamaIndex please feel free to open a PR! Check out our `CONTRIBUTING.md` file for more guidance.
 
 ---
 
